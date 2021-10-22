@@ -109,20 +109,28 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await cmd.reply_photo(
+            photo=f"{random.choice(PHOTO)}",
+            caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
-                [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
-                ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
-                ]]
+                [
+                    [
+                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                    ],
+                    [
+                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT"),
+                        InlineKeyboardButton("😎 About", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
+                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                    ]
+                ]
             )
         )
-        StopPropagation
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
