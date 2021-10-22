@@ -1,5 +1,5 @@
 {
-    "name": "Auto Filter Bot V3",
+    "name": "Lalu-lulu Bot",
     "description": "A greater auto filter bot with features like IMDb support,inline mode,broadcast feature etc..",
     "logo":"https://telegra.ph/file/ad9cb7fc42ec0e5e6d006.jpg",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/DalinMathew/AutoFilterBotV3",
-    "repository": "https://github.com/DalinMathew/AutoFilterBotV3",
+    "website": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT_V2",
+    "repository": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT_V2",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -79,7 +79,7 @@
         },
         "BOT_NAME": {
             "description": "Name of the database in mongoDB ",
-            "value": "LuciferMoringstar_Robot"
+            "value": "Lalu-luluBot"
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
