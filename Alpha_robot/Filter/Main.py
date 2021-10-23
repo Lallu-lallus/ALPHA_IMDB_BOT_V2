@@ -131,6 +131,19 @@ async def group(client, message):
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
+            Sonic=await client.send_message(
+            chat_id = message.chat.id,
+            text=f"""
+<b>👋Hey {message.from_user.mention}</b>
+<b>Sorry, No Movie/Series Related to the Given Word Was Found 🥺</b>
+<b>Please Go to Google and Confirm the Correct Spelling 🙏</b>
+<b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>
+<b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File :- @admins</b>""",
+            
+            parse_mode="html",
+            reply_to_message_id=message.message_id
+        )
+        else:
             return
         if not btn:
             return
